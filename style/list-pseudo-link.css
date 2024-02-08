@@ -64,7 +64,7 @@ input:focus {
 }
 
 nav.links a {
-    color: crimson;
+  color: crimson;
 }
 nav.links a:link {
   color: rgb(255, 0, 0);
@@ -78,4 +78,34 @@ nav.links a:active {
 nav.links a:hover {
   color: chartreuse;
   text-decoration: none;
+}
+
+.p-elements::first-line {
+  color: red;
+}
+
+.p-elements::first-letter {
+  font-size: 30px;
+}
+
+ul.before-after li::before {
+  content: "👍";
+}
+
+ul.before-after li:nth-child(3)::before {
+  content: "🏎️";
+}
+
+ul.before-after li:last-child:after {
+  content: "🚘";
+}
+ul.before-after li:nth-child(2)::after {
+  content: " Nice Car";
+  font-family: 'Font Awsome 6 Free';
+  font-weight: 700;
+  content: '\f53a';
+}
+
+ul.before-after li:nth-child(3):hover:after {
+  content: '❤️';
 }
